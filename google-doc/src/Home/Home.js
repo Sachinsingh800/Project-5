@@ -4,6 +4,9 @@ import Header from '../Component/Header/Header'
 import jsPDF from 'jspdf';
 import TitleBar from '../Component/TitleBar/TitleBar';
 import html2canvas from "html2canvas"
+
+
+
 function Home() {
     const [color,setColor] = useState("black")
     const [size,setSize] = useState(5)
@@ -28,14 +31,14 @@ function handleClick(data) {
     if (data == 50) {
       select.current.style.transform = 'scale(0.5)';
     }
-    if (data == 90) {
-      select.current.style.transform = 'scale(0.8)';
+    if (data == 75) {
+      select.current.style.transform = 'scale(0.7)';
     }
-    if (data == 10) {
-      select.current.style.transform = 'scale(0.2)';
+    if (data == 150) {
+      select.current.style.transform = 'scale(1.5)';
     }
-    if (data == 70) {
-      select.current.style.transform = 'scale(0.2)';
+    if (data == 200) {
+      select.current.style.transform = 'scale(2)';
     }
   }
 
@@ -114,9 +117,7 @@ function handleClick(data) {
         if(i===14){
             document.execCommand("superscript")
         }
-        if(i===15){
-            // document.execCommand("superscript")
-        }
+
         if(i===16){
             setSize(size-1)
             document.execCommand("fontSize","",size)
@@ -135,6 +136,7 @@ function handleClick(data) {
         }
         if(i===20){
             document.execCommand("insertImage",false,image);
+          
         }
         if(i===21){
         }
