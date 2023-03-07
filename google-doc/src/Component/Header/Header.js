@@ -51,11 +51,11 @@ const Header = ({ handleTextStyle ,handleColor,onImageChange,handleClick}) => {
     {  icon: <label htmlFor="input"><ImageIcon /></label> ,input: <input id="input" hidden  type="file"  onChange={onImageChange} className="filetype" />},
     {icon: <select  className={style.scaleBar}  onChange={(e) =>handleClick(e.target.value)}
     >
-      <option>50</option>
-      <option>75</option>
-      <option>100</option>
-      <option>150</option>
-      <option>200</option>
+      <option>50%</option>
+      <option>75%</option>
+      <option>100%</option>
+      <option>150%</option>
+      <option>200%</option>
     </select>}
   ];
 

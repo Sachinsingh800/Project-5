@@ -22,19 +22,19 @@ const onImageChange = (event) => {
     
 function handleClick(data) {
     console.log(data)
-    if (data == 100) {
+    if (data == "100%") {
       select.current.style.transform = 'scale(1)';
     }
-    if (data == 50) {
+    if (data ==" 50%") {
       select.current.style.transform = 'scale(0.5)';
     }
-    if (data == 75) {
+    if (data == "75%") {
       select.current.style.transform = 'scale(0.7)';
     }
-    if (data == 150) {
+    if (data == "150%") {
       select.current.style.transform = 'scale(1.5)';
     }
-    if (data == 200) {
+    if (data ==" 200%") {
       select.current.style.transform = 'scale(2)';
     }
   }
