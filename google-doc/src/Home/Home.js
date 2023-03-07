@@ -4,9 +4,6 @@ import Header from '../Component/Header/Header'
 import jsPDF from 'jspdf';
 import TitleBar from '../Component/TitleBar/TitleBar';
 import html2canvas from "html2canvas"
-
-
-
 function Home() {
     const [color,setColor] = useState("black")
     const [size,setSize] = useState(5)

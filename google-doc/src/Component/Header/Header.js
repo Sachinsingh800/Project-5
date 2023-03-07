@@ -27,7 +27,7 @@ const Header = ({ handleTextStyle ,handleColor,onImageChange,handleClick}) => {
 
 
 
- 
+
   const data = [
     { icon: <UndoIcon/>},
     { icon: <RedoIcon/> },
