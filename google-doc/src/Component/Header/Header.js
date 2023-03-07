@@ -22,7 +22,7 @@ import FormatListBulletedIcon from '@mui/icons-material/FormatListBulleted';
 import FormatListNumberedIcon from '@mui/icons-material/FormatListNumbered';
 import ImageIcon from '@mui/icons-material/Image';
 
-const Header = ({ handleTextStyle ,handleColor,onImageChange,handleClick}) => {
+const Header = ({ handleTextStyle ,handleColor,onImageChange,handleClick ,handleBackColor}) => {
 
 
 
@@ -43,12 +43,13 @@ const Header = ({ handleTextStyle ,handleColor,onImageChange,handleClick}) => {
     { icon: <FormatIndentIncreaseIcon /> },
     { icon: <SubscriptIcon /> },
     { icon: <SuperscriptIcon /> },
-    { icon: <UnfoldMoreIcon />, input: <input onChange={(e)=>handleColor(e.target.value)} type="color"/> },
+    { icon:<input onChange={(e)=>handleColor(e.target.value)} type="color"/> },
     { icon: <TextDecreaseIcon /> },
     {  icon: <TextIncreaseIcon /> },
     {  icon: <FormatListBulletedIcon /> },
     {  icon: <FormatListNumberedIcon /> },
     {  icon: <label htmlFor="input"><ImageIcon /></label> ,input: <input id="input" hidden  type="file"  onChange={onImageChange} className="filetype" />},
+    { icon:<input onChange={(e)=>handleBackColor(e.target.value)} type="color"/> },
     {icon: <select  className={style.scaleBar}  onChange={(e) =>handleClick(e.target.value)}
     >
       <option>50%</option>
