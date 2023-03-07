@@ -139,18 +139,8 @@ function handleClick(data) {
         }
        
     }
-    async function handleDownload() {
-        const sheetContent = document.querySelector(`.${style.para}`);
-        const canvas = await html2canvas(sheetContent, { dpi: 300 });
-        const imageData = canvas.toDataURL("image/png", 1.0);
-        const pdfDoc = new jsPDF({
-          orientation: "portrait",
-          unit: "mm",
-          format: "a4",
-          compress: false,
-        });
-        pdfDoc.addImage(imageData, "PNG", 0, 0, 210, 297, "", "FAST");
-        pdfDoc.save("document.pdf");
+    function handleDownload() {
+      window.print()   
       }
 
 

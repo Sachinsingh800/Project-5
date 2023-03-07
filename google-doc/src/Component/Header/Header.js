@@ -31,7 +31,6 @@ const Header = ({ handleTextStyle ,handleColor,onImageChange,handleClick}) => {
   const data = [
     { icon: <UndoIcon/>},
     { icon: <RedoIcon/> },
-    { icon: <LocalPrintshopIcon/>  },
     { icon: <FormatBoldIcon />,},
     {  icon: <FormatItalicIcon />,},
     {icon: <FormatUnderlinedIcon />,},
